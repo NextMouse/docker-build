@@ -18,8 +18,8 @@ RUN rm /etc/apt/sources.list && \
     unzip yanagishima-${VERSION}-source.zip && \
     cd yanagishima-${VERSION}-source && \
     ./gradlew distZip && \
-    nohup build/distributions/yanagishima-20.0/bin/yanagishima-start.sh >y.log 2>&1 &
     rm ../yanagishima-${VERSION}-source.zip && \
+    nohup build/distributions/yanagishima-20.0/bin/yanagishima-start.sh >y.log 2>&1 &
 
 COPY . .
 
