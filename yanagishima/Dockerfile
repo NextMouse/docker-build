@@ -25,4 +25,3 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["bash", "docker-entrypoint.sh"]
